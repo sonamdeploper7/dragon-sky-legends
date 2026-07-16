@@ -1,0 +1,8 @@
+{
+  "appId": "com.dragonskylegends.game",
+  "appName": "Dragon Sky Legends",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

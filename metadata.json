@@ -1,0 +1,6 @@
+{
+  "name": "Dragon Sky Legends",
+  "description": "An addictive, beautiful, and highly polished fantasy arcade mobile game featuring cute baby dragons, floating islands, and crystal collections.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
