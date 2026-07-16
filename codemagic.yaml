@@ -8,11 +8,14 @@ workflows:
         script: npm install
       - name: Build web project
         script: npm run build
-      - name: Sync Capacitor
-        script: npx cap sync android
+      - name: Add Android platform if missing
+        script: |
+          npx cap add android || true
+          npx cap sync android
       - name: Build Android App Bundle (AAB)
         script: |
           cd android
+          chmod +x gradlew
           ./gradlew bundleRelease
     artifacts:
       - android/app/build/outputs/bundle/release/*.aab
